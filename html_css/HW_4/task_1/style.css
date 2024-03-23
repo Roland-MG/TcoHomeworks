@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vh);
+    gap: 10px;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.bg_yellow {
+    background-image: linear-gradient(to bottom right, #fed16a, #fdc545);
+}
+
+.bg_blue {
+    background-image: linear-gradient(to bottom right, #76ceff, #40bcfe);
+}
+
+.bg_danger {
+    background-image: linear-gradient(to bottom right, #de6773, #d74251);
+}
+
+.bg_green {
+    background-image: linear-gradient(to bottom right, #20d1af, #13a488);
+}

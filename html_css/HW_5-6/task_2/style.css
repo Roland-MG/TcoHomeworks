@@ -1,0 +1,24 @@
+table,
+table :where(:is(thead, tbody) td) {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table > tbody tr:nth-child(1) {
+    background-color: yellow;
+}
+table > tbody tr:nth-child(2) {
+    background-color: blue;
+}
+table > tbody tr:nth-child(3) {
+    background-color: green;
+}
+table > tbody tr:nth-child(4) {
+    background-color: lightgray;
+}
+table > tbody tr:nth-child(5) {
+    background-color: lightcyan;
+}
+table > tbody tr:nth-child(6) {
+    background-color: khaki;
+}

@@ -1,0 +1,40 @@
+main {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+main p:first-child::first-line {
+    color: sienna;
+}
+
+main p:first-child::first-letter {
+    font-size: 2em;
+    color: red;
+}
+
+main p:nth-child(2) {
+    border: 2px solid red;
+}
+main p:last-of-type {
+    color: blue;
+}
+
+main a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid red;
+    margin-inline: 45%;
+    padding: 5px;
+    background-color: #eee;
+}
+
+main a::before {
+    content: "<<<";
+    color: red;
+}
+
+main a::after {
+    content: ">>>";
+    color: red;
+}

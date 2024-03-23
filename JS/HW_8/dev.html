@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dev.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="js/dev.js"></script>
+</head>
+
+<body>
+    <div id="root">
+
+        <div class="login_modal" id="login_modal">
+            <span class="modal_bg"></span>
+            <form action="post" id="login_form">
+                <label>Login
+                    <br>
+                    <input type="text" name="login" id="login">
+                </label>
+                <br>
+                <span>
+
+                    <label>Password
+                        <br>
+                        <input type="password" name="pass" id="pass" autocomplete="new-password" required>
+                    </label>
+                    <a class="show_pass_btn">🫣</a>
+                </span>
+                <br>
+                <br>
+                <button type="submit" id="btn_login">Login</button>
+            </form>
+        </div>
+
+
+
+        <div id="task_list">
+            <header><button id="logout_btn">Log out ❌</button></header>
+            <hr>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <aside>
+
+            <form id="monthForm">
+                <label>Year <input type="number" min="1970" max="" id="year" value="2023"></label>
+                <label>Month <input type="number" min="1" max="12" id="month" value="9"></label>
+                <button type="submit">📅</button>
+            </form>
+
+
+            <h1 style="font-size: mediums;"></h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Mon.</th>
+                        <th>Tue.</th>
+                        <th>Wed.</th>
+                        <th>Thu.</th>
+                        <th>Fri.</th>
+                        <th>Sat.</th>
+                        <th>Sun.</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar">
+
+                </tbody>
+            </table>
+            <br>
+            <div class="modal">
+
+                <span class="modal_bg"></span>
+                <div class="note_editor_modal">
+                    <form id="note_editor">
+                        <label>Note</label>
+                        <input type="hidden" id="note_date" name="note_date">
+
+                        <textarea name="note" id="note" cols="30" rows="5"></textarea>
+                        <span class="form_btns">
+
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Save</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <aside class="notes" id="note_list">
+            <!-- <button id="">➕</button> -->
+
+        </aside>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

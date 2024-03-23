@@ -1,0 +1,162 @@
+:root {
+    --blue: #2153dd;
+    --green: #21dd2a;
+    --red: #dd2121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation menu */
+
+nav {
+    background-color: #383e4c;
+    height: 60px;
+    text-align: center;
+    padding: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    height: inherit;
+    list-style-type: none;
+}
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: azure;
+    border: 1px solid azure;
+    padding: 7px 12px;
+}
+
+.btn:hover,
+.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main section */
+
+.hdr {
+    background: url("bg.jpg") no-repeat;
+    /* background-position: bottom; */
+    background-size: cover;
+    height: 400px;
+    color: aliceblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 1px #000;
+    font-family: "Open Sans", sans-serif;
+}
+
+.hdr > p {
+    font-size: larger;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+#sct_1 {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    align-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+.card .content {
+    padding: 10px;
+}
+
+.card h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.8em;
+    color: lightslategray;
+}
+
+.btn_blue {
+    background: var(--blue);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.btn_blue:hover {
+    background: #4871e2;
+}
+.btn_green {
+    background: var(--green);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.btn_green:hover {
+    background: #6dd673;
+}
+
+.btn_red {
+    background: var(--red);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.btn_red:hover {
+    background: #db5656;
+}
+
+.green {
+    color: var(--green);
+}
+.blue {
+    color: var(--blue);
+}
+.red {
+    color: var(--red);
+}
+
+.gray {
+    color: lightslategray;
+}
+
+.card_big {
+    width: 450px;
+    height: auto;
+}
+
+.card_big h4 {
+    text-align: center;
+}
+
+#sct_2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

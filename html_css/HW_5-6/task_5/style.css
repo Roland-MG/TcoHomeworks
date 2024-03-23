@@ -1,0 +1,34 @@
+main {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+main p:first-child::first-line {
+    color: aqua;
+}
+
+main p:first-child::first-letter {
+    font-size: 2em;
+    color: blue;
+}
+
+.btn_group {
+    display: grid;
+    gap: 15px;
+}
+
+.btn_group button {
+    height: 40px;
+}
+
+.btn_group button:first-child {
+    background-color: blue;
+}
+
+.btn_group button:nth-child(3) {
+    background-color: cyan;
+}
+
+.btn_group button:last-child {
+    background-color: blue;
+}

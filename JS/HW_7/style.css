@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("Abstract_Backgound_-_Network.jpg");
+    overflow: hidden;
+}
+
+#root{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin: 3%;
+    gap: 50px;
+}
+
+input, textarea {
+    padding: 5px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(64, 179, 255);
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(121, 201, 255);
+}
+
+button:active {
+    background-color: rgb(72, 182, 255);
+}
+
+table {
+    position: relative;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.514);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    user-select: none;
+}
+
+table th{
+    background-color: #009dff67;
+}
+
+#calendar td,
+table th {
+    cursor: pointer;
+    transition: all 0.28s;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+td,
+th {
+     padding: 10px;
+    position: relative;
+}
+
+hr {
+    opacity: 30%;
+}
+
+/* td:hover::after, */
+th:hover::before {
+    background-color: rgba(230, 230, 255, 0.5);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 700%;
+    left: 0;
+    top: 100%;
+    z-index: -99999;
+}
+th:hover::after{
+    background-color: rgba(0, 243, 243, 0.5);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -99999;
+}
+
+#calendar td:nth-child(7) {
+    background-color: rgba(210, 105, 30, 0.5);
+}
+
+#calendar td:nth-child(7):hover {
+    background-color: rgba(130, 61, 12, 0.5);
+}
+
+#calendar td:nth-child(6) {
+    background-color: rgba(255, 112, 60, 0.507);
+}
+
+#calendar td:nth-child(6):hover {
+    background-color: rgba(209, 61, 7, 0.5);
+}
+
+#calendar td:hover {
+    background-color: rgba(160, 214, 255, 0.466);
+}
+
+
+.today{
+    /* border: 1px solid #000; */
+    background-color: #0077ff33;
+    box-shadow: 0px 0px 0px 1px rgba(0, 16, 160, 0.75) inset;
+    /* border-radius: 50%; */
+}
+
+.note_calendar::before{
+    background-color: rgba(255, 255, 0, 0.2);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.note{
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 5px;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 97%;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: all 0.15s;
+}
+
+.note_editor_modal{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(155, 155, 155);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    background-color: #ffffff60;
+    z-index: 1;
+}
+
+.modal{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+
+#note_editor{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.modal_bg {
+    background: #00000060;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.note_date{
+font-weight: bold;
+color: rgb(204, 255, 121);
+font-size: small;
+}
+
+#note_list{
+    max-height: 90vh;
+    max-width: 50%;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+}
+
+.note:hover {
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    box-shadow: 0px 0px 10px 0px #FFFFFF;
+}

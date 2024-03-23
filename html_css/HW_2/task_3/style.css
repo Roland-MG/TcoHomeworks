@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: purple;
+}
+
+section{
+    width: 35rem;
+}
+
+.data_field {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #BB5575;
+    text-align: center;
+}
+
+h3 {
+    color: cadetblue;
+    text-align: right;
+}
+
+fieldset legend {
+    color: aliceblue;
+}
+
+.gender {
+    color: yellow;
+}
+
+.product {
+    color: orange;
+}
+
+form button {
+    color: white;
+    background-color: deeppink;
+}

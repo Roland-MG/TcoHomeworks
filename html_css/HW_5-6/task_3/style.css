@@ -1,0 +1,13 @@
+table,
+table :where(:is(thead, tbody) td) {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table > thead :not() {
+    background-color: aqua;
+}
+
+table > tbody tr:nth-child(odd) {
+    background-color: pink;
+}

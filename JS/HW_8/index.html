@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meneger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="root">
+        <aside id="forms">
+            <br>
+            <form id="add_dev" method="post">
+                <label>Name
+                    <br>
+                    <input type="text" name="name">
+                </label>
+                <br>
+                <br>
+                <label>Login
+                    <br>
+                    <input type="text" name="login">
+                </label>
+                <br>
+                <br>
+                <label>Password
+                    <br>
+                    <input type="password" name="pass" id="pass" autocomplete="new-password" required>
+                </label>
+                <a class="show_pass_btn">🫣</a>
+                <br>
+                <br>
+
+                <button type="submit" class="btn">Add ➕</button>
+            </form>
+            <br>
+            <hr>
+            <br>
+
+            <form id="add_task">
+                <input type="hidden" name="task_id">
+                <label>Developer
+                    <select name="dev_name" id="dev_name">
+                        <!-- <option value="123456">John Smith</option> -->
+                    </select>
+                </label>
+                <br>
+                <br>
+                <label>Task
+                    <br>
+                    <textarea name="task" id="task_text" cols="30" rows="10" required></textarea>
+                </label>
+                <br>
+                <br>
+                <label>Dedline
+                    <br>
+                    <input type="datetime-local" name="dedline" id="dedline" required>
+                </label>
+                <br>
+                <br>
+                <button type="submit">Add task</button>
+            </form>
+        </aside>
+
+        <div id="task_list">
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

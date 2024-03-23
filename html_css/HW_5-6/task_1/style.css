@@ -1,0 +1,19 @@
+main {
+    max-width: 619px;
+}
+
+h1,
+h2 {
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+main p::first-letter {
+    font-size: 30px;
+    font-style: italic;
+    color: gray;
+}
+
+main p::first-line {
+    font-weight: bold;
+}

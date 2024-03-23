@@ -1,0 +1,31 @@
+* {}
+
+body {
+    background-color: lightskyblue;
+}
+
+/*Section 1*/
+#sct_1 h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#sct_1 p {
+    color: yellow;
+    text-align: right;
+}
+
+/*Section 2*/
+#sct_2 h2 {
+    color: blueviolet;
+}
+
+/*Section 3*/
+#sct_3 h2 ins{
+    color: orange;
+    border-bottom: blueviolet solid 2px;
+}
+
+#sct_3 p {
+    text-align-last: center;
+}

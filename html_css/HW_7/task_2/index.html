@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'heebo': ['Heebo']
+                    },
+                    fontSize: {
+                        '32px': '32px'
+                    },
+                    boxShadow: {
+                        'img': '-9px 9px 0px 0px rgba(237,247,250,0.75)',
+                        'article': '0px 4px 10px 0px rgba(187, 225, 250, 0.25);'
+                    }
+                },
+                colors: {
+                    'ebony-clay': {
+                        '50': '#f3f5fb',
+                        '100': '#e3e9f6',
+                        '200': '#ced9ef',
+                        '300': '#acbfe4',
+                        '400': '#859fd5',
+                        '500': '#6881c9',
+                        '600': '#5468bc',
+                        '700': '#4a57ab',
+                        '800': '#41498c',
+                        '900': '#383f70',
+                        '950': '#21243d',
+                    },
+                    'bittersweet': {
+                        '50': '#fff1f1',
+                        '100': '#ffe1e1',
+                        '200': '#ffc7c7',
+                        '300': '#ffa0a0',
+                        '400': '#ff6464',
+                        '500': '#f83b3b',
+                        '600': '#e51d1d',
+                        '700': '#c11414',
+                        '800': '#a01414',
+                        '900': '#841818',
+                        '950': '#480707',
+                    },
+                    'aqua-spring': {
+                        '50': '#edf7fa',
+                        '100': '#e7f4f7',
+                        '200': '#c9e7ee',
+                        '300': '#99d5e0',
+                        '400': '#62bfce',
+                        '500': '#3ea8b9',
+                        '600': '#2d899c',
+                        '700': '#256e7f',
+                        '800': '#225d6a',
+                        '900': '#214d59',
+                        '950': '#16323b',
+                    },
+                    'cerulean': {
+                        '50': '#ebfdff',
+                        '100': '#cef9ff',
+                        '200': '#a2f2ff',
+                        '300': '#63e6fd',
+                        '400': '#1cd0f4',
+                        '500': '#00a8cc',
+                        '600': '#038eb7',
+                        '700': '#0a7294',
+                        '800': '#125c78',
+                        '900': '#144d65',
+                        '950': '#063246',
+                    },
+                    'blue-zodiac': {
+                        '50': '#eff8ff',
+                        '100': '#daeeff',
+                        '200': '#bde2ff',
+                        '300': '#90d1ff',
+                        '400': '#5cb6fe',
+                        '500': '#3695fb',
+                        '600': '#2077f0',
+                        '700': '#1860dd',
+                        '800': '#1a4eb3',
+                        '900': '#1b458d',
+                        '950': '#142850',
+                    },
+                    'regent-gray': {
+                        '50': '#f5f8f8',
+                        '100': '#edf1f2',
+                        '200': '#dde5e8',
+                        '300': '#c8d4d9',
+                        '400': '#b1c0c8',
+                        '500': '#9dabb7',
+                        '600': '#8695a4',
+                        '700': '#73818f',
+                        '800': '#5f6a74',
+                        '900': '#50585f',
+                        '950': '#2e3338',
+                    },
+                    'alto': {
+                        '50': '#f7f7f7',
+                        '100': '#ededed',
+                        '200': '#e0e0e0',
+                        '300': '#c8c8c8',
+                        '400': '#adadad',
+                        '500': '#999999',
+                        '600': '#888888',
+                        '700': '#7b7b7b',
+                        '800': '#676767',
+                        '900': '#545454',
+                        '950': '#363636',
+                    },
+
+                }
+            },
+            plugins: [],
+        }
+
+    </script>
+</head>
+
+<body>
+    <header class="flex justify-end p-5 sticky top-0 bg-white">
+        <input type="checkbox" class="hidden" id="hidden_checkbox">
+        <nav class="hidden md:inline-flex gap-7 input">
+            <a class="black text-right text-xl bg_danger bold font-heebo" href="#">Works</a>
+            <a class="black text-right text-xl bg_danger bold font-heebo" href="#">Blog</a>
+            <a class="black text-right text-xl bg_danger bold font-heebo" href="#">Contact</a>
+        </nav>
+        <label for="hidden_checkbox" class="inline-flex md:hidden">
+            <img src="img/menu.svg" alt="">
+        </label>
+    </header>
+
+    <main>
+        <section id="sct_1">
+            <div
+                class="flex flex-col items-center mx-6 sm:flex-row-reverse sm:justify-between sm:max-w-screen-md sm:mx-auto ">
+                <img src="img/Ellipse 1.png" alt="boy photo"
+                    class="rounded-full w-[170px] shadow-img sm:ms-28 sm:w-[243px]">
+                <div class="flex flex-col items-center sm:items-start sm:mr-auto">
+                    <h1
+                        class="text-ebony-clay-950 font-heebo font-bold text-32px text-center not-italic leading-10 p-5 sm:text-left sm:px-0 sm:text-[44px]">
+                        Hi, I am John, <br>Creative Technologist</h1>
+                    <p class="text-ebony-clay-950 text-center font-heebo text-base not-italic font-normal sm:text-left">
+                        Amet minim
+                        mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <a href=" #"
+                        class="text-white text-xl px-[20px] py-[9px] my-[27px] bg-bittersweet-400 font-heebo rounded-sm">Download
+                        Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sct_2" class="bg-aqua-spring-50 flex justify-center flex-wrap pb-9">
+            <div class="flex flex-col items-center mx-6 sm:mx-0 sm:justify-between sm:max-w-[856px] w-full ">
+                <div class="flex justify-between m-4 sm:w-full">
+                    <span class="inline-flex text-ebony-clay-950 font-heebo text-[18px] sm:text-[22px] ">Recent
+                        posts</span>
+                    <a href="#" class="sm:inline-flex hidden text-cerulean-500 text-right font-heebo items-center">View
+                        all</a>
+                </div>
+
+                <div class="flex flex-wrap gap-4 sm:gap-5">
+                    <article
+                        class="flex flex-col gap-5 bg-white min-w-[354px] sm:max-w-[418px] p-5 rounded shadow-article">
+                        <h2 class="text-ebony-clay-950 font-heebo text-[22px] font-bold leading-[30px] sm:text-[26px]">
+                            Making
+                            a design
+                            system from
+                            scratch</h2>
+                        <p class="text-ebony-clay-950 font-heebo text-base sm:text-[18px] font-normal">12 Feb 2020   |
+                              Design, Pattern</p>
+                        <p class="text-ebony-clay-950 font-heebo text-base font-normal">Amet minim
+                            mollit
+                            non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </article>
+
+                    <article
+                        class="flex flex-col gap-5 bg-white min-w-[354px] sm:max-w-[418px] p-5 rounded shadow-article">
+                        <h2 class="text-ebony-clay-950 font-heebo text-[22px] font-bold leading-[30px] sm:text-[26px]">
+                            Creating pixel perfect icons in Figma</h2>
+                        <p class="text-ebony-clay-950 font-heebo text-base sm:text-[18px] font-normal">12 Feb 2020   |
+                              Design, Pattern</p>
+                        <p class="text-ebony-clay-950 font-heebo text-base font-normal">Amet minim
+                            mollit
+                            non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sct_3" class="fbg-aqua-spring-50 flex justify-center flex-wrap mx-[18px]">
+            <div class="flex flex-col items-center mx-6 sm:mx-0 sm:justify-between sm:max-w-[856px] w-full ">
+                <div class="flex justify-center md:justify-start m-4 sm:w-full">
+                    <p class="inline-flex text-ebony-clay-950 font-heebo text-[18px] sm:text-[22px] ">Featured
+                        works</p>
+
+                </div>
+
+                <div class="flex flex-row md:flex-col flex-wrap gap-5 w-full justify-center ">
+                    <article class="flex flex-row flex-wrap md:flex-nowrap md:gap-4 max-w-[339px] md:max-w-full ">
+                        <img src="img/img_1.png" alt="article image" class="w-[339px] md:w-[246px] rounded-md">
+                        <div>
+                            <h2
+                                class="text-ebony-clay-950 font-heebo text-[24px] font-bold leading-[30px] md:text-[26px] my-4">
+                                Designing Dashboards</h2>
+
+                            <p class="flex gap-[22px]">
+                                <span
+                                    class="text-white bg-blue-zodiac-950 rounded-2xl px-3 font-heebo font-black ">2020</span>
+                                <span class="text-regent-gray-600">Dashboard</span>
+                            </p>
+
+                            <p class="text-ebony-clay-950 font-heebo font-normal mt-5">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </article>
+
+                    <hr class="text-alto-200">
+
+                    <article class="flex flex-row flex-wrap md:flex-nowrap md:gap-4 max-w-[339px] md:max-w-full ">
+                        <img src="img/img_2.png" alt="article image" class="w-[339px] md:w-[246px] rounded-md">
+                        <div>
+                            <h2
+                                class="text-ebony-clay-950 font-heebo text-[24px] font-bold leading-[30px] md:text-[26px] my-4">
+                                Vibrant Portraits of 2020</h2>
+
+                            <p class="flex gap-[22px]">
+                                <span
+                                    class="text-white bg-blue-zodiac-950 rounded-2xl px-3 font-heebo font-black ">2018</span>
+                                <span class="text-regent-gray-600">Illustration</span>
+                            </p>
+
+                            <p class="text-ebony-clay-950 font-heebo font-normal mt-5">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </article>
+
+                    <hr class="text-alto-200">
+
+                    <article class="flex flex-row flex-wrap md:flex-nowrap md:gap-4 max-w-[339px] md:max-w-full ">
+                        <img src="img/img_3.png" alt="article image" class="w-[339px] md:w-[246px] rounded-md">
+                        <div>
+                            <h2
+                                class="text-ebony-clay-950 font-heebo text-[24px] font-bold leading-[30px] md:text-[26px] my-4">
+                                36 Days of Malayalam type</h2>
+
+                            <p class="flex gap-[22px]">
+                                <span
+                                    class="text-white bg-blue-zodiac-950 rounded-2xl px-3 font-heebo font-black ">2018</span>
+                                <span class="text-regent-gray-600">Typography</span>
+                            </p>
+
+                            <p class="text-ebony-clay-950 font-heebo font-normal mt-5">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </article>
+
+                    <hr class="text-alto-200">
+
+                </div>
+
+        </section>
+
+    </main>
+
+    <footer class="flex justify-center items-center h-[182px] mt-[150px]">
+        <div class="flex flex-col gap-[26px] text-center w-[232px]">
+            <div class="flex justify-between">
+                <img src="img/fb.svg" alt="fb logo">
+                <img src="img/insta.svg" alt="fb logo">
+                <img src="img/twitter.svg" alt="fb logo">
+                <img src="img/Linkedin.svg" alt="fb logo">
+            </div>
+            <span class="text-center text-ebony-clay-950 text-[14px]">Copyright ©2020 All rights reserved</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</body>
+
+</html>

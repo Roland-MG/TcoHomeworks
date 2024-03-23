@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" /> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container search">
+            <form id="find_form"><input type="text" name="find_text" id="find_text"><button type="submit">🔍</button>
+            </form>
+            <div class="btn_block">
+                <button class="btn" id="add_contact">➕</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container" class="container block">
+        </div>
+        <div class="modal_window">
+            <span class="modal_bg"></span>
+            <div class="edit_contact">
+                <form id="con_edit_form">
+                    <span style="font-size: larger;"><strong id="modal_title"></strong></span>
+                    <p style="color: red; display: none;">Error</p>
+                    <input type="hidden" name="id">
+                    <!-- <input type="text" name="id"> -->
+                    <span>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" maxlength="20" placeholder="Enter your name" required>
+                    </span>
+
+                    <span><label>Phone</label>
+                        <div>
+                            <select name="codes" id="codes">
+                                <option value="374">+374</option>
+                                <option value="93" selected>+93</option>
+                                <option value="355">+355</option>
+                                <option value="213">+213</option>
+                                <option value="1">+1</option>
+                                <option value="376">+376</option>
+                                <option value="244">+244</option>
+                                <option value="264">+264</option>
+                                <option value="268">+268</option>
+                                <option value="54">+54</option>
+                                <option value="297">+297</option>
+                            </select>
+                            <input type="tel" name="num" placeholder="93123456" pattern="[0-9]{2}[0-9]{6}" required>
+                        </div>
+                    </span>
+
+                    <span><label for="">Birth date</label>
+                        <input type="date" name="date" required>
+                    </span>
+                    <div class="btns_box">
+                        <button class="btns" type="reset" id="con_edit_cancel">Cancel</button>
+                        <button class="btns" type="submit">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script> -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
